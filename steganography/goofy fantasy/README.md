@@ -32,8 +32,29 @@ This block also contains a ```Packed Fields``` byte (located at offset 9 of the 
 
 Both components possess "unused" bits where data can be discreetly introduced without altering the file's rendering. However, the documentation indicates that the Graphic Control Extension block is optional. A GIF file can theoretically contain none at all.
 
-To check the values of these different bits, a parser must be written. You will find a schematized summary of the GIF89a standard at this address : https://giflib.sourceforge.net/whatsinagif/bits_and_bytes.html. Once parsed (see ```solve.py```), we notice that these reserved bits only fluctuate starting from a specific image x and only within the Image Descriptors.
+## Parsing Gif file
 
-Thus, by collecting all the reserved bits from each Image Descriptor and concatenating them, the flag is retrieved in ASCII format.
+To verify the values of these different bits, a parser must be written. You can find a diagrammed summary of the GIF89a standard at this address: https://giflib.sourceforge.net/whatsinagif/bits_and_bytes.html.
+
+There are a few subtleties to take into account. Most blocks have a fixed size, so you simply need to skip over the block once its signature is identified.
+
+Others have variable sizes and require a small calculation. For example:
+
+![norme table](images/GCT.png "Titre de l'image")
+
+The **Global Color Table** is an optional block that allows colors to be defined for all images, without them being redefined every time. In other words, it is a constant color macro.
+
+To skip this block, you need to know the value of **N**. This is located in the previous block.
+
+![norme table](images/LSD.png "Titre de l'image")
+
+# Exploitation
+
+Once parsed, it is noticeable that these reserved bits only fluctuate starting from image and only within the Image Descriptors.
+
+Thus, by retrieving all the reserved bits from each Image Descriptor and concatenating them, the flag is recovered in ASCII format.
+
+Look at ```solve.py```
+
 
 
