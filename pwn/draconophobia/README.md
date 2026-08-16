@@ -28,4 +28,4 @@ nc 127.0.0.1 9004
 ## Write up
 
 Are you stuck ? I invite you to read this article I wrote that explain the chall step by step.
-![Read the full article and detailed Write-Up here](url)
+![Write-Up here](url)
