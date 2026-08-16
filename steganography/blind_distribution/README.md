@@ -1,7 +1,5 @@
 # Blind Distribution
 
-The sources for the challenge are available [here](../).
-
 > Your nephew was thrilled to have recorded his very first video of his favorite game. Unfortunately, he spilled coffee all over his laptop, and now his video isn’t loading correctly anymore… Help him recover the original footage!
 
 You will find the flag by watching the video `gameplay.mp4` once it has been restored to its original state.
