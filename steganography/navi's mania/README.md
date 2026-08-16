@@ -1,4 +1,4 @@
-# Description
+# Navi's Mania
 
 >Link is trapped in a time loop by the Calamity. He has been opening this chest for eternity, yet it remains hopelessly empty. It is up to you to >analyze this dream and extract its true contents
 >
