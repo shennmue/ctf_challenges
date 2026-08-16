@@ -13,10 +13,12 @@ The goal of this challenge is to analyze and exploit the provided binary by leve
 
 ## Local Deployment
 
-The complete environment is provided via Docker to ensure the challenge is reproducible. To start the server locally:
+The complete environment is provided via Docker to ensure the challenge is reproducible. 
+To start the server locally:
 
 ```bash
 ./build.sh
+docker-compose up -d
 ```
 Once the server is running, you can connect to the remote service. 
 Please launch the challenge in a full-screen terminal: 
