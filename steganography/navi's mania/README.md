@@ -4,7 +4,7 @@
 >
 >The flag is hidden within an MP4 file. You must study the structure of MP4 files to find it.
 
-# MP4 file’s structure
+## MP4 file’s structure
 
 MP4 files are organized into boxes. Each box contains other boxes, which together form the file’s ecosystem. Each one has a different purpose, a specific size, and a precise type.
 
@@ -23,6 +23,8 @@ Here is the nesting of these boxes according to the ISO/IEC 14496-12 standard:
 Furthermore, generally all information related to the video is found in two `trak` atoms: one for audio data and one for video data.
 
 When an MP4 file contains multiple tracks, almost all players offer an option to switch between the different tracks contained within the same file.
+
+## Incoherence 
 
 When using a tool to parse the entire file for a surface view (https://www.onlinemp4parser.com/) we got :
 
