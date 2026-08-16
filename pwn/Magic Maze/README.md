@@ -26,3 +26,7 @@ Please launch the challenge in a full-screen terminal:
 ```bash
 stty raw -echo; nc localhost 9003; reset;
 ```
+![](solve/images/intro.png)
+![](solve/images/first_part.png)
+![](solve/images/second_part.png)
+![](solve/images/end.png)
