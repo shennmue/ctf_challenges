@@ -1,0 +1,10 @@
+
+services:
+  draconophobia:
+    build: .
+    image: draconophobia:latest
+    restart: unless-stopped
+    # Required for nsjail to work properly
+    privileged: true 
+    ports:
+      - "9004:9000"
