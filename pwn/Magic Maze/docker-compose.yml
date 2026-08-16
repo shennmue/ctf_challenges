@@ -1,0 +1,10 @@
+
+services:
+  magic_maze:
+    build: .
+    image: magic_maze:latest
+    restart: unless-stopped
+    # Required for nsjail to work properly
+    privileged: true 
+    ports:
+      - "9003:9000"
