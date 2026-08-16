@@ -1,3 +1,4 @@
+# Write Up
 
 By observing the main function, we notice two variables that resemble structures. Using Ghidra's automatic structure generation tool, we get:
 
