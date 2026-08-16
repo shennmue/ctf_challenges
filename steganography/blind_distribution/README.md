@@ -31,8 +31,4 @@ We notice that the offsets associated with the different chunks are out of order
 
 By simply sorting this list to put the addresses back into the correct numerical order, we realign the playback with the actual position of the data on the disk, allowing the original video to be recovered.
 
-It gives us this solve script :
-
-```python
-# [Insert your solve script here]
-```
+See ```solve.c```.
