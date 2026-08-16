@@ -21,12 +21,11 @@ Chunk 1 -> Offset X
 Chunk 2 -> Offset Y
 …
 ```
-
 Without these indexes, the player cannot know where the raw data starts and ends within the `mdat`, rendering the video unplayable.
 
 When analyzing the `stco` box:
 
-![](images/shufle_stco.png)
+![](images/shuffle_stco.png)
 
 We notice that the offsets associated with the different chunks are out of order. However, in a standard MP4 file, these addresses within the `stco` atom must almost systematically appear in ascending order, as they follow the physical progression of the data in the `mdat` atom.
 
