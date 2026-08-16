@@ -16,8 +16,7 @@ The goal of this challenge is to analyze and exploit the provided binary by leve
 The complete environment is provided via Docker to ensure the challenge is reproducible. To start the server locally:
 
 ```bash
-# Build the image and start the container in the background
-docker-compose up -d --build
+./build.sh
 ```
 Once the server is running, you can connect to the remote service. 
 Please launch the challenge in a full-screen terminal: 
